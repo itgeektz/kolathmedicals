@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+input[type="radio"]:focus { /*no need, if you don't disable default appearance*/
+  outline-color: transparent; /*to remove the square border on focus*/
+   cursor:pointer
+}
+
+input[type="radio"]:checked { /*no need, if you don't disable default appearance*/
+  background-color: #41adff;
+   cursor:pointer
+}
+
+input[type="radio"]:checked ~ span:first-of-type {
+  color: #fff;
+   cursor:pointer;
+   background-color:#c19903 !important;
+   
+}
+
+
+
+input[type="radio"] {
+    width: 0px;
+    height: 0px;
+    border-radius: 0%;
+    background-color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+
+
+
+/* Hide the browser's default checkbox */
+.filter-listing input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: #fff;
+  border:2px solid #666;
+  border-radius:3%
+}
+
+/* On mouse-over, add a grey background color */
+.filter-listing:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.filter-listinginput:checked ~ .checkmark {
+  background-color: #2196F3;
+  border:2px solid #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.filter-listing input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.filter-listing .checkmark:after {
+ left: 7px;
+ top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+input[type="radio"]:focus { /*no need, if you don't disable default appearance*/
+  outline-color: transparent; /*to remove the square border on focus*/
+   cursor:pointer
+}
+
+input[type="radio"]:checked { /*no need, if you don't disable default appearance*/
+  background-color: #41adff;
+   cursor:pointer
+}
+
+
+
+label span:first-of-type {
+font-size:1em;
+cursor: pointer;
+  
+}
+
+input[type="radio"] {
+    width: 0px;
+    height: 0px;
+    border-radius: 0%;
+    background-color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+
+
